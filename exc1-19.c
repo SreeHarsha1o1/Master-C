@@ -42,7 +42,7 @@ int reverse(char s[], int len)//this function reverses a given input
     --i;
     if(s[i] == '\n')
         --i;
-
+    
     while(j < i)
     {
         temp = s[j];
