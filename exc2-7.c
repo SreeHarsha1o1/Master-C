@@ -14,7 +14,7 @@ int main()//main functon
     n = 3;
 
     r = invert(x,p,n);//function call
-    printf("inverted value of x is = %u\n",x);
+    printf("inverted value of x is = %u\n",r);
 
     return 0;
 }
@@ -33,4 +33,3 @@ int invert(unsigned x,int p, int n)
     (~(~0<<n) << (p+1-n)) will position the bits to required position
     x ^ (~(~0 << n) << (p+1-n)) will XOR x with the calulation and returns the XOR'ed value x
     */
-   
