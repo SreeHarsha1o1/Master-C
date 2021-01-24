@@ -84,9 +84,6 @@ double pop(void)
 
 #include<ctype.h>
 
-int getch(void);
-void ungetch(int);
-
 /*getop: get next operator or numeric oparand*/
 int getop(char s[])
 {
