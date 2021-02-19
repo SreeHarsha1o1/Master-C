@@ -4,7 +4,6 @@
 
 void lower(void);
 void upper(void);
-void print (void);
 
 int main(int argc, char *argv[])
 {
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        print();
+        printf("usage: give arguments after ./a.out like'./a.out tolower\' or \'./a.out toupper\'\n");
     }
     return 0;
 }
@@ -40,9 +39,4 @@ void upper(void)
 
     while((c = getchar()) != EOF)
         putchar(toupper(c));
-}
-
-void print(void)
-{
-    printf("usage: give arguments after ./a.out eg:\'./a.out tolower\' or \'./a.out toupper\'\n");
 }
